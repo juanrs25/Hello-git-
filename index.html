@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World! </title>
+    <title>Hello World!</title>
+
+     <!--nueva funcion-->
+    <script>
+        function mostrarMensaje() {
+            alert("localhost ha dicho: Has hecho clic en el botón");
+            document.getElementById("mensaje").textContent = "localhost ha dicho: Has hecho clic en el botón";
+        }
+    </script>
 </head>
 <body>
     <h1>Hello world</h1>
     <!--Esta es una nueva modificacion-->
-    <div> <img src="descarga (18).jpg" alt="carro lambo"
-        style="width: 100%;max-width:960px">
+    <div>
+        <img src="descarga (18).jpg" alt="carro lambo"
+             style="width: 100%; max-width:960px">
     </div>
 
-    <h1>Arhivo Git</h1>
-     <p>Git es muy un buen manejador de versiones para tus proyectos</p>
-    
+    <h1>Archivo Git</h1>
+    <p>Git es un buen manejador de versiones para tus proyectos</p>
     <p>Archivo de ejemplo para el repaso de git</p>
-    <!-- Aqui añadimos un  parrafo adicional y agregamos un boton a la estructura del index paso 6-->
-    <p>Estamos practicando como trabajar en git</p>
-    <button type="button">Click Me!</button>
+    <p>Estamos practicando cómo trabajar en git</p>
+
+    <!-- Botón con función -->
+    <button type="button" onclick="mostrarMensaje()">Click Me!</button>
+    <p id="mensaje" style="color: green; font-weight: bold;"></p>
 
 </body>
 </html>
